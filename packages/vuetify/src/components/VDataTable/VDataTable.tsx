@@ -121,6 +121,7 @@ export const VDataTable = genericComponent<new <T extends readonly any[], V>(
     'update:groupBy': (value: any) => true,
     'update:expanded': (value: any) => true,
     'update:currentItems': (value: any) => true,
+    'update:sortedItems': (value: any) => true,
   },
 
   setup (props, { attrs, slots }) {
