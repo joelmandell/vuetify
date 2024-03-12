@@ -114,7 +114,7 @@ export function useSortedItems <T extends Record<string, any>> (
   })
 
   watch(sortedItems, val => {
-    vm.emit('update:sortedItems', val)
+    vm.emit('update:sortedItems', computed(() => val))
   })
 
   return { sortedItems }
